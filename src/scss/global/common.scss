@@ -1,6 +1,10 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  font-family: $primaryFont;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
 *,
@@ -15,10 +19,6 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: $primaryColor;
-  font-family: $primaryFont;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.8;
 }
 
 .wrapper {
