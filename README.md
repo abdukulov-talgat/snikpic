@@ -1,3 +1,3 @@
-# Atlas
+# Snikpic
 
-## Учебный проект Atlas. Адаптивный дизайн. HTML + SCSS + GULP
+## Учебный проект Snikpic. Адаптивный дизайн. HTML + SCSS + GULP

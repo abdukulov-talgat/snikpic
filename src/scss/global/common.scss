@@ -16,9 +16,9 @@ body {
   background-color: #ffffff;
   color: $primaryColor;
   font-family: $primaryFont;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .wrapper {
@@ -35,114 +35,4 @@ body {
   max-width: $containerWidth + $containerPadding + px;
   padding: 0 $containerSidePadding + px;
   margin: 0 auto;
-}
-
-.section__header {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-
-  &--left {
-    max-width: none;
-    margin: 0;
-    text-align: left;
-  }
-}
-
-.section__title {
-  margin: 0;
-  margin-bottom: 15px;
-  color: $secondaryColor;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.22;
-  text-transform: capitalize;
-
-  .section__header--light & {
-    color: #ffffff;
-  }
-
-  @media (max-width: $breakpoint-480) {
-    font-size: 36px;
-  }
-}
-
-.section__text {
-  margin: 0;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  line-height: 22px;
-
-  .section__header--light & {
-    color: #ffffff;
-  }
-
-  &--larger {
-    font-size: 24px;
-    line-height: 1.5;
-  }
-}
-
-.before-768 {
-  display: block;
-
-  @media (max-width: $breakpoint-768) {
-    display: none;
-  }
-}
-
-.select {
-  min-height: 24px;
-  border: 0;
-  background-color: transparent;
-  color: #b0bdb7;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.71;
-  outline: 0;
-}
-
-/***** Social *****/
-.social {
-  @include reset-list;
-  display: grid;
-  gap: 34px;
-  grid-template-columns: repeat(4, 24px);
-
-  @media (max-width: $breakpoint-768) {
-    gap: 20px;
-  }
-}
-
-.social__link {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  outline: 0;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-}
-
-.social__link--facebook {
-  background-image: url("@img/icons/icons.svg#facebook");
-}
-
-.social__link--twitter {
-  background-image: url("@img/icons/icons.svg#twitter");
-}
-
-.social__link--linkedin {
-  background-image: url("@img/icons/icons.svg#linkedin");
-}
-
-.social__link--youtube {
-  background-image: url("@img/icons/icons.svg#youtube");
 }
