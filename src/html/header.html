@@ -1,1 +1,40 @@
-ewe
+<header class="header menu">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header_logo" href="/">
+        <svg width="132" height="32" viewBox="0 0 132 32">
+          <use xlink:href="./img/icons/icons.svg#header-logo" />
+        </svg>
+      </a>
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li><a class="menu__link" href="#">Product</a></li>
+          <li><a class="menu__link menu__link--active" href="#">Use Case</a></li>
+          <li><a class="menu__link" href="#">Learn</a></li>
+          <li><a class="menu__link" href="#">Comparison</a></li>
+          <li><a class="menu__link" href="#">Pricing</a></li>
+          <li><a class="menu__link" href="#">Contact Sales</a></li>
+        </ul>
+        <div class="menu__user-nav">
+          <button class="menu__button" type="button">Sign up</button>
+          <div class="dropdown">
+            <button class="dropdown__button" type="button">
+              en
+              <svg width="17" height="16" viewBox="0 0 17 16">
+                <use xlink:href="./img/icons/icons.svg#arrow-down" />
+              </svg>
+            </button>
+            <select class="dropdown__list">
+              <option value="en" selected>en</option>
+              <option value="ru">ru</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <button class="menu__burger">
+        <span class="visually-hidden">Menu toggle button</span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
