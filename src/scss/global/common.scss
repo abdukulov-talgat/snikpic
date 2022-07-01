@@ -45,10 +45,14 @@ body {
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
-}
 
-.section__title--large {
-  font-size: 3.33rem;
+  &--large {
+    font-size: 3.33rem;
+  }
+
+  &--medium {
+    font-size: 2.78rem;
+  }
 }
 
 .text-special {
@@ -89,11 +93,25 @@ body {
 
 .bg-container {
   max-width: 1360px;
-  padding: 100px 0 30px;
   margin: 0 auto;
   background-color: #fdf9f8;
 
-  @media (max-width: $breakpoint-768) {
-    padding: 30px 0 30px;
+  &--second {
+    background-color: #f9f7fc;
   }
+}
+
+.text {
+  margin: 0;
+
+  &:not(:first-child) {
+    margin-top: 24px;
+  }
+}
+
+.vertical-align {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
