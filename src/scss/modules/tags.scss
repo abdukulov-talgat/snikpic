@@ -1,0 +1,52 @@
+.tags {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  gap: 16px;
+
+  @media (max-width: $breakpoint-768) {
+    gap: 10px 5px;
+  }
+}
+
+.tags li {
+  padding: 7px 19px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  text-align: center;
+
+  @media (max-width: $breakpoint-768) {
+    padding: 7px 14px;
+  }
+
+  &:nth-child(5n + 1) {
+    border-color: #ffd1ca;
+    background-color: #fff1ef;
+    color: #ff8b7a;
+  }
+
+  &:nth-child(5n + 2) {
+    border-color: #ffca7a;
+    background-color: #fff8ee;
+    color: #ffac2f;
+  }
+
+  &:nth-child(5n + 3) {
+    border-color: #98fac0;
+    background-color: #ecfff4;
+    color: #3acd77;
+  }
+
+  &:nth-child(5n + 4) {
+    border-color: #6ee1e9;
+    background-color: #f1feff;
+    color: #2bc0ca;
+  }
+
+  &:nth-child(5n + 5) {
+    border-color: #ebbdff;
+    background-color: #fcf5ff;
+    color: #c140fd;
+  }
+}
