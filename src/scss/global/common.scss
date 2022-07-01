@@ -36,3 +36,51 @@ body {
   padding: 0 $containerSidePadding + px;
   margin: 0 auto;
 }
+
+
+.section__title {
+  margin: 0;
+  color: $secondaryColor;
+  font-size: 2.56rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.section__title--large {
+  font-size: 3.33rem;
+}
+
+.text-special {
+  color: $specialColor;
+}
+
+.input {
+  padding: 23px 31px;
+  border: 1px solid #dfe8fa;
+  background: #f7f9fd;
+  border-radius: 15px;
+  color: $primaryColor;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.8;
+
+  &--small {
+    padding: 13px 22px;
+    background-color: transparent;
+  }
+}
+
+.button {
+  padding: 15px 19px;
+  border: 1px solid transparent;
+  background-color: $specialColor;
+  border-radius: 15px;
+  box-shadow: 0 16px 40px rgba(255, 188, 166, 0.33);
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
