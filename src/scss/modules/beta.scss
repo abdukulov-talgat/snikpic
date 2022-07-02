@@ -1,0 +1,53 @@
+.beta {
+}
+
+.beta__form {
+  position: relative;
+  z-index: 2;
+  padding: 120px 48px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 -10px 150px rgba(80, 88, 100, 0.05);
+  text-align: center;
+
+  @media (max-width: $breakpoint-768) {
+    padding: 60px 24px;
+  }
+}
+
+.beta__inner {
+  display: grid;
+  margin-top: 74px;
+  gap: 40px 32px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: $breakpoint-768) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.beta__group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.beta__form .input {
+  width: 100%;
+
+  @media (max-width: $breakpoint-768) {
+    &::placeholder {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.beta__label {
+  color: $secondaryColor;
+}
+
+.beta__submit {
+  margin-top: 48px;
+}
+
