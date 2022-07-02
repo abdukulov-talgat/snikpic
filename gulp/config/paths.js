@@ -16,7 +16,7 @@ const paths = {
             `${srcFolder}/*.html`,
         ],
         style: `${srcFolder}/scss/style.scss`,
-        js: `${srcFolder}/js/app.js`,
+        js: `${srcFolder}/js/index.{js,jsx}`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: [
             `${srcFolder}/img/**/*.svg`,
@@ -45,7 +45,7 @@ const paths = {
             `${srcFolder}/*.html`,
         ],
         style: `${srcFolder}/scss/**/*.scss`,
-        js: `${srcFolder}/js/**/*.js`,
+        js: `${srcFolder}/js/**/*.{js,jsx}`,
         images: [
             `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg}`,
             `!${srcFolder}/img/icons/**`

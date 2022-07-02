@@ -16,7 +16,7 @@ function js() {
             mode: app.isDev ? 'development' : 'production',
             devtool: 'source-map',
             output: {
-                filename: 'app.min.js',
+                filename: 'bundle.min.js',
             },
             module: {
                 rules: [
@@ -24,6 +24,20 @@ function js() {
                         test: /\.css$/i,
                         use: ['style-loader', 'css-loader'],
                     },
+                    {
+                        test: /\.(jsx|js)$/i,
+                        use: {
+                            loader: 'babel-loader',
+                            options: {
+                                presets: [
+                                    ['@babel/preset-env', {
+                                        "targets": "defaults"
+                                    }],
+                                    '@babel/preset-react'
+                                ]
+                            }
+                        },
+                    }
                 ],
             }
         }))
