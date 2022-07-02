@@ -253,6 +253,7 @@ body {
   margin: 0;
   list-style-type: none;
   display: flex;
+  transition: transform 0.5s ease;
 }
 
 .tabs__item {
